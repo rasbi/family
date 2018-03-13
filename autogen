@@ -1,0 +1,10 @@
+wget https://minergate.com/download/deb-cli -O minergate-cli.deb && sudo dpkg -i minergate-cli.deb && apt-get install screen
+apt-get update
+apt-get install cpulimit
+apt-get -y install cpulimit
+cd ~
+screen
+minergate-cli -user email -matauang jumlah core 
+TOP
+q ( untuk menutup perintah top )
+cpulimit -l 40 -p PID & 
